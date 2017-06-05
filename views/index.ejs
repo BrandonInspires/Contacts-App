@@ -12,10 +12,15 @@
   <div class="contact-list">
     <% contacts.forEach(function(contact){ %>
       <div>
-        <%= contact.name + " " + contact.id %>
+       <a href='contacts/<%= contact.id %>'> <%= contact.name %> </a>
+       <button><a href=''> DELETE </a></button>
+       
+        <!--<%= contact.name + " " + contact.phone %>-->
       </div>
     <% }) %>
   </div>
-
+  <div> 
+    <button><a href="/contacts/new"> Add Contact </a></button>    
+  </div>
 </body>
 </html>

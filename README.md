@@ -33,38 +33,38 @@ views/              # html templates go here
 - [ ] Commit messages should summarize what changes are being introduced.
 - [ ]  There are at least two commits per day but ideally a lot more. 
 - [ ] It’s OK to commit incomplete/draft code. The important thing is to keep a good pace of development and show how your code evolved toward your solution.
-- [ ]  Your artifact (final project) uses the starter code.
+- [x]  Your artifact (final project) uses the starter code.
 - [x]  Your artifact is published to a GitHub repository.
 
 # Pages and Routes
 
 - [ ] There are three different pages, each with their own route.
 
-- [ ] The list of all contacts can be viewed at the root route, /.
+- [x] The list of all contacts can be viewed at the root route, /.
 - [ ] Individual contacts can be viewed in more detail at the route /contacts/:id, where :id is a contact record id from the database. 
 For example, visiting the route /contacts/3 would show the contact with the database id 3.
 - [ ] New contacts can be created by visiting the route /contacts/new and submitting the form.
 # Database
 
-- [ ] Update the database schema so that your app can store all the necessary information.
-- [ ] Database table contacts has fields for contact name, email address, phone number, home address (separate fields for: street, city, state, country, and zip code), birthday, and personal website.
-- [ ] Columns in database table use appropriate data types.
-- [ ] Your app uses pg, pg-promise or knex to communicate with a postgres server.
+- [x] Update the database schema so that your app can store all the necessary information.
+- [x] Database table contacts has fields for contact name, email address, phone number, home address (separate fields for: street, city, state, country, and zip code), birthday, and personal website.
+- [x] Columns in database table use appropriate data types.
+- [x] Your app uses pg, pg-promise or knex to communicate with a postgres server.
 - [ ] There are scripts defined to import contact data and load the schema:
 
 - [ ] $ npm run schema loads the schema (schema.sql) into the database
 - [ ] $ npm run import imports the data in contacts_full.sql into the database
 User Stories
 
-- [ ] Users of the app have the ability to take the following actions.
+Users of the app have the ability to take the following actions:
 
 # #Stage One: MVP
 
- - [ ] When a user is viewing the list page (/), they see all of their contacts.
- - [ ] On the list page, a user can see a list of all contacts’ names sorted alphabetically by first name.
- - [ ] When a user is viewing the list page (/), they can click on individual contacts to go to the corresponding detail page for the contact (/contacts/:id).
+ - [x] When a user is viewing the list page (/), they see all of their contacts.
+ - [x] On the list page, a user can see a list of all contacts’ names sorted alphabetically by first name.
+ - [x] When a user is viewing the list page (/), they can click on individual contacts to go to the corresponding detail page for the contact (/contacts/:id).
  - [ ] On the contact detail page, a user can see the contact’s name, email address, phone number, home address (including: street, city, state, country, and zip code), birthday, and personal website.
- - [ ] When a user is viewing the list page (/), they can click on a link to “Add Contact”, which takes them to the new contact page (/contacts/new).
+ - [x] When a user is viewing the list page (/), they can click on a link to “Add Contact”, which takes them to the new contact page (/contacts/new).
  - [ ] When a user fills out and submits the new contact form at /contacts/new, they are redirected to the “detail” page for the new contact. 
 For example, if a user creates a new contact “Ada Lovelace”, then after submitting the form they would be redirected to the contact page for Ada Lovelace (/contacts/<id>, where <id> is the record id from the database corresponding to the new contact).
 
@@ -100,9 +100,9 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 
 # Templating and Includes
 
-- [ ] Use HTML templating to build your web pages and embed dynamic data.
+- [x] Use HTML templating to build your web pages and embed dynamic data.
 
-- [ ] The server uses the EJS templating language to build HTML.
+- [x] The server uses the EJS templating language to build HTML.
 - [ ] Each route that renders HTML uses its own EJS template.
 - [ ] Each page template shares the same layout. 
 - [ ] The means the <head> is consistent across all paged and is not duplicated.
