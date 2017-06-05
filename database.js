@@ -19,12 +19,7 @@ const query = function(sql, variables, callback){
 }
 
 const getContacts = function(callback){
-  query(`
-    SELECT
-      *
-    FROM
-      contacts
-  `, [], callback)
+  query(`SELECT * FROM contacts ORDER BY contacts.name`, [], callback)
 }
 
 module.exports = {
