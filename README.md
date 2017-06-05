@@ -34,7 +34,7 @@ views/              # html templates go here
 - [ ]  There are at least two commits per day but ideally a lot more. 
 - [ ] It’s OK to commit incomplete/draft code. The important thing is to keep a good pace of development and show how your code evolved toward your solution.
 - [ ]  Your artifact (final project) uses the starter code.
-- [ ]  Your artifact is published to a GitHub repository.
+- [x]  Your artifact is published to a GitHub repository.
 
 # Pages and Routes
 
@@ -46,7 +46,7 @@ For example, visiting the route /contacts/3 would show the contact with the data
 - [ ] New contacts can be created by visiting the route /contacts/new and submitting the form.
 # Database
 
-- [ ]Update the database schema so that your app can store all the necessary information.
+- [ ] Update the database schema so that your app can store all the necessary information.
 - [ ] Database table contacts has fields for contact name, email address, phone number, home address (separate fields for: street, city, state, country, and zip code), birthday, and personal website.
 - [ ] Columns in database table use appropriate data types.
 - [ ] Your app uses pg, pg-promise or knex to communicate with a postgres server.
@@ -56,7 +56,7 @@ For example, visiting the route /contacts/3 would show the contact with the data
 - [ ] $ npm run import imports the data in contacts_full.sql into the database
 User Stories
 
-- [ ]Users of the app have the ability to take the following actions.
+- [ ] Users of the app have the ability to take the following actions.
 
 # #Stage One: MVP
 
@@ -100,7 +100,7 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 
 # Templating and Includes
 
-- [ ]Use HTML templating to build your web pages and embed dynamic data.
+- [ ] Use HTML templating to build your web pages and embed dynamic data.
 
 - [ ] The server uses the EJS templating language to build HTML.
 - [ ] Each route that renders HTML uses its own EJS template.

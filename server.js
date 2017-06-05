@@ -9,22 +9,22 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.get('/', (request, response) => {
+app.get('/', (req, res) => {
   database.getContacts((error, contacts) => {
     if (error) {
-      response.status(500).render('error', {
+      res.status(500).render('error', {
         error: error,
       })
     } else {
-      response.render('index', {
+      res.render('index', {
         contacts: contacts,
       })
     }
   })
 })
 
-app.use((request, response) => {
-  response.status(404).render('not_found')
+app.use((req, resp) => {
+  res.status(404).render('not_found')
 })
 
 const port = process.env.PORT || 3000
