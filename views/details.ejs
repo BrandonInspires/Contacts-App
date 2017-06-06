@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Details</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script type="text/javascript" src="/script.js"></script>
+</head>
+
+<body>
+
+  <h1>Details</h1>
+
+  <div class="details-list">
+    <% contacts.forEach(function(contact){ %>
+      <div>
+        <a href='contacts/<%= contact.id %>'>
+          <%= contact.name %>
+        </a>
+      </div>
+      <button><a href=''> DELETE </a></button>
+      <div>
+        Email:
+        <a href='mailto:/<%= contact.email %>'>
+          <%= contact.email %>
+      </div>
+      <div>
+        Phone :
+        <%= contact.phone %>
+
+          <div>
+            Address :
+            <%= contact.street %>
+              </br>
+              <%= contact.city %>,
+                <%= contact.state %>
+                  <%= contact.zip %>
+                    </br>
+                    <%= contact.country %>
+                      </br>
+          </div>
+          <div>
+ Birthday:
+<%= contact.birthday %>
+          </div>
+          <div>
+ website:
+<a href='<%= contact.website %>'>
+  <%= contact.website %>
+          </div>
+</body>
+<% }) %>
+  </div>
+
+</html>

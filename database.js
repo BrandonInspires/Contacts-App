@@ -1,4 +1,5 @@
 const pg = require('pg')
+const server = require('./server')
 const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/contacts'
 const client = new pg.Client(connectionString)
 client.connect()
@@ -21,7 +22,11 @@ const query = function(sql, variables, callback){
 const getContacts = function(callback){
   query(`SELECT * FROM contacts ORDER BY contacts.name`, [], callback)
 }
+const getContactDetails = function(callback){
+  query(`SELECT * FROM contacts WHERE contacts.id = 15`, [], callback)
+}
 
 module.exports = {
   getContacts,
+  getContactDetails
 }
