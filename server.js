@@ -2,7 +2,6 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const database = require('./database')
 const app = express()
-const contactRouter = express.Router()
 
 require('ejs')
 app.set('view engine', 'ejs');
@@ -25,6 +24,7 @@ app.get('/', (req, res) => {
 		}
 	})
 })
+app.get('/contacts/new', (req, res) => {res.render('new')	})
 app.get('/contacts/:id', (req, res) => {
 	contactId = parseInt(req.params.id);
 	database.getContactDetails((error, contacts) => {
@@ -52,5 +52,4 @@ app.listen(port, () => {
 })
 
 module.exports = {
-// contactId,
 }

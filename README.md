@@ -63,7 +63,7 @@ Users of the app have the ability to take the following actions:
  - [x] When a user is viewing the list page (/), they see all of their contacts.
  - [x] On the list page, a user can see a list of all contacts’ names sorted alphabetically by first name.
  - [x] When a user is viewing the list page (/), they can click on individual contacts to go to the corresponding detail page for the contact (/contacts/:id).
- - [ ] On the contact detail page, a user can see the contact’s name, email address, phone number, home address (including: street, city, state, country, and zip code), birthday, and personal website.
+ - [x] On the contact detail page, a user can see the contact’s name, email address, phone number, home address (including: street, city, state, country, and zip code), birthday, and personal website.
  - [x] When a user is viewing the list page (/), they can click on a link to “Add Contact”, which takes them to the new contact page (/contacts/new).
  - [ ] When a user fills out and submits the new contact form at /contacts/new, they are redirected to the “detail” page for the new contact. 
 For example, if a user creates a new contact “Ada Lovelace”, then after submitting the form they would be redirected to the contact page for Ada Lovelace (/contacts/<id>, where <id> is the record id from the database corresponding to the new contact).
@@ -113,3 +113,6 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 
 - [ ] When clicking a link that will delete a contact, a confirmation prompt displays confirming the user wants to delete the contact. Contacts are only deleted if the user “confirms”.
 - [ ] When a user attempts to submit the new contact form without a value in the name field, the form is not submitted and a form validation error is displayed at the top of the page in red.
+
+## google maps API key
+AIzaSyCkMczI6R7jtOt0aLT9YDpkLzPRiCPJswA
