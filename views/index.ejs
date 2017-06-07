@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <head>
-    <% include ./partials/head %>
+  <% include ./partials/head %>
 </head>
-<body>
-  <div class="container">
-    <div class="row">
-      <header>
-<% include ./partials/header %> 
-</header>
 
+<body class="centered-wrapper">
+  <div class="centered-content">
+  <header>
+    <% include ./partials/header %>
+  </header>
   <h1>Contacts</h1>
-  <div>
+  <ul>
     <% contacts.forEach(function(contact){ %>
-      <div>
-       <a href='contacts/<%= contact.id %>'> <%= contact.name %> </a>
-       <button class="btn"><a href=''> DELETE </a></button>
-      </div>
-    <% }) %>
-    <button><a href="/contacts/new"> Add Contact </a></button>    
-  </div>
+      <li>
+        <a href='contacts/<%= contact.id %>' style="color:#002653">
+          <%= contact.name %>
+        </a>
+        <a class="delete" href='' style="color:#D0011B"> X </a>
+      </li>
+      <% }) %>
+  </ul>
   <footer>
-  <% include ./partials/footer %>
+    <% include ./partials/footer %>
   </footer>
   </div>
-  </div>
 </body>
+
 </html>
+
+
