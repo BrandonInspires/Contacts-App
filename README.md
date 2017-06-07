@@ -38,7 +38,7 @@ views/              # html templates go here
 
 # Pages and Routes
 
-- [ ] There are three different pages, each with their own route.
+- [x] There are three different pages, each with their own route.
 
 - [x] The list of all contacts can be viewed at the root route, /.
 - [ ] Individual contacts can be viewed in more detail at the route /contacts/:id, where :id is a contact record id from the database. 
@@ -103,11 +103,11 @@ For example, if a user creates a new contact “Ada Lovelace”, then after subm
 - [x] Use HTML templating to build your web pages and embed dynamic data.
 
 - [x] The server uses the EJS templating language to build HTML.
-- [ ] Each route that renders HTML uses its own EJS template.
-- [ ] Each page template shares the same layout. 
+- [x] Each route that renders HTML uses its own EJS template.
+- [x] Each page template shares the same layout. 
 - [ ] The means the <head> is consistent across all paged and is not duplicated.
-- [ ] Each page template shared the same nav bar. 
-- [ ] Each page has the same nav bar but the code is not duplicated and each page template uses the same page header ejs template (eg: header.ejs).
+- [x] Each page template shared the same nav bar. 
+- [x] Each page has the same nav bar but the code is not duplicated and each page template uses the same page header ejs template (eg: header.ejs).
 
 # Browser Interactivity
 
