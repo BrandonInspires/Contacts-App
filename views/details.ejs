@@ -2,13 +2,13 @@
 <html>
 
 <head>
-  <title>Contact Details</title>
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <script type="text/javascript" src="/script.js"></script>
+    <% include ./partials/head %>
 </head>
 
 <body>
-
+<header>
+  <% include ./partials/header %>
+</header>
   <h1>Details</h1>
 
   <div class="details-list">
@@ -48,8 +48,12 @@
 <a href='<%= contact.website %>'>
   <%= contact.website %>
           </div>
-</body>
+          
+
 <% }) %>
   </div>
-
+  <footer>
+    <% include ./partials/footer %>
+  </footer>
+  </body>
 </html>

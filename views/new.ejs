@@ -1,14 +1,15 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Contacts</title>
-      <link rel="stylesheet" type="text/css" href="/style.css">
-        <script type="text/javascript" src="/script.js"></script>
+    <% include ./partials/head %>
 </head>
       <body>
+          <header>
+          <% include ./partials/header %>
+        </header>
 
-        <h1>Add New Contact</h1>
-
+        <h1>Add New Contact</h1><div class="container">
+<div class="col-lg-1 col-offset-6 centered">
       <form action="/contacts/new" method="post">
         <label for="name">Name: </label>
         <input id="name" type="text" name="name_field" value="Full Name"></br>
@@ -27,10 +28,13 @@
         <label for="state">State: </label>
         <input id="state" type="text" name="state" value=""></br>
         <label for="Zip">Zip: </label>
-        <input id="zi[" type="number" name="zip" value=""></br>
+        <input id="zip" type="number" name="zip" value="90990"></br>
         
-</form>
-  </div>
-
+      </form>
+      </div>
+      </div>
+  <footer class="centered">
+    <% include ./partials/footer %>
+  </footer>
       </body>
 </html>
